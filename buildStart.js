@@ -7,7 +7,7 @@ const https = require( 'https' );
 const fs = require( 'fs' );
 const app = new koa();
 
-app.use( serve( __dirname + '/build', {
+app.use(serve('/build', {
     maxage: 365 * 24 * 60 * 60
 } ) );
 
